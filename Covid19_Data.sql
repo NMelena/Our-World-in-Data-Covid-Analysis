@@ -101,7 +101,7 @@ Join Portfolio_Project..CovidVaccinations vac
 	On dea.location = vac.location
 	and dea.date = vac.date
 Where dea.continent is not null 
-And dea.location = 'United States'
+--And dea.location = 'United States'
 )
 select *, (rolling_people_vaccinated/Population) as number_of_vaccines_per_person
 From PopvsVac
