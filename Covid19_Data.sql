@@ -6,11 +6,6 @@ Where location = 'United States'
 order by 3,4
 
 
-select  location, date, total_cases, new_cases, total_deaths, population
-From Portfolio_Project..CovidDeaths
-order by 1,2
-
-
 --Total Cases Vs. Total Deaths
 --Shows the rate at which people infected by Covid 19 die
 select  continent, location, date, total_cases, total_deaths, (total_deaths/total_cases)*100 as Death_Rate 
